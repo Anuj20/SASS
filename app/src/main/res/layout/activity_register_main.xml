@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gamer.sass.RegisterMain"
+    android:background="@color/BackgroundLight">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="116dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:id="@+id/reg_profilepic"
+        app:layout_constraintBottom_toBottomOf="@+id/reg_age"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reg_profilepic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_age"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/reg_age"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintStart_toEndOf="@+id/reg_profilepic"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/reg_email"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_age"
+        app:layout_constraintBottom_toTopOf="@+id/reg_password"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="0dp" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/reg_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_password"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reg_regbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttonshape"
+        android:shadowDx="11"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_contact" />
+
+</android.support.constraint.ConstraintLayout>

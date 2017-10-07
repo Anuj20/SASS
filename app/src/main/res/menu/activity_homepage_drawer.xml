@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/com_facebook_profile_picture_blank_square"
+            android:title="Your Account" />
+
+        <item
+            android:id="@+id/nav_Myads"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Ads" />
+
+        <item
+            android:id="@+id/nav_writercorner"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Writer Corner" />
+    </group>
+
+    <item android:title="These Work too!!">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@android:drawable/ic_delete"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gamer.sass.DetailsProduct">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/detail_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <TextView
+                android:id="@+id/disp_prodprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif"
+                android:hint="Product Price"
+                android:paddingRight="25dp"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/disp_prodimage"
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/term_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disp_prodseller"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textbox"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical|start"
+                android:hint="Seller name"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/disp_prodcontact"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:autoLink="phone"
+                android:background="@drawable/textbox"
+                android:gravity="center_vertical|start"
+                android:hint="Contact"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/disp_proddesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/textbox"
+                android:hint="Description"
+                android:lineSpacingExtra="8sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <ImageView
+        android:id="@+id/full_screen_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+</android.support.design.widget.CoordinatorLayout>

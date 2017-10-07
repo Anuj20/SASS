@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SASS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Rate the app </string>
+
+    <string name="facebook_app_id">479525265724835</string>
+    <string name="fb_login_protocol_scheme">fb479525265724835</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="logoimage">Logo Image</string>
+    <string name="WriterCorner">Coming Soon...Keep Watching this space</string>
+    <string name="textview">Please login using Google or Facebook. There is some problem with Native login which will be rectified soon.</string>
+
+    <string-array name="category_array">
+        <item>Electronics</item>
+        <item>Notes</item>
+        <item>Books</item>
+        <item>Clothes</item>
+        <item>Vehicles</item>
+        <item>Services</item>
+        <item>Other</item>
+    </string-array>
+</resources>

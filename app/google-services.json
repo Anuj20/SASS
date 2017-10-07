@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "744654947636",
+    "firebase_url": "https://sass-31081.firebaseio.com",
+    "project_id": "sass-31081",
+    "storage_bucket": "sass-31081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744654947636:android:96b38195c0503120",
+        "android_client_info": {
+          "package_name": "gamer.sass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744654947636-8o64iph4a36glj3ugt2retl8ro41n09n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gamer.sass",
+            "certificate_hash": "3533553d0014d12d58326aa53aa7f311b4f5bc23"
+          }
+        },
+        {
+          "client_id": "744654947636-jrubtuturngn0flvq8256njkbnt2iq4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gamer.sass",
+            "certificate_hash": "b79dfec8bbaf2096076d19eba173402df649cc53"
+          }
+        },
+        {
+          "client_id": "744654947636-ud27jqfh1kehf7d9m8gq2b6f1k6t15gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gamer.sass",
+            "certificate_hash": "93bab3d1734fdc23ecf883b0c887a244d17b7684"
+          }
+        },
+        {
+          "client_id": "744654947636-8e4fdiv2gof3i9asbungqnnur5u0e4tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADIkfEZUWFdCmL51dmKFGRjZNFfXpRLhU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744654947636-8e4fdiv2gof3i9asbungqnnur5u0e4tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
